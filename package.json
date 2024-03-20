@@ -1,0 +1,21 @@
+{
+    "name": "student-task-management",
+    "version": "1.0.0",
+    "description": "Web application for student task management using Express.js and MongoDB",
+    "main": "src/app.js",
+    "scripts": {
+      "start": "node server/app.js"
+    },
+    "dependencies": {
+      "dotenv": "^10.0.0",
+      "express": "^4.17.1",
+      "mongoose": "^6.1.6"
+    },
+    "engines": {
+      "node": ">=14.17.0"
+    },
+    "license": "MIT",
+    "devDependencies": {
+    }
+  }
+  

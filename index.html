@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="taskForm">
+        <h2>Add Task</h2>
+        <form id="addTaskForm">
+            <label for="courseId">Course ID:</label>
+            <input type="text" id="courseId" name="courseId">
+            <label for="taskName">Task Name:</label>
+            <input type="text" id="taskName" name="taskName">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description"></textarea>
+            <label for="dueDate">Due Date:</label>
+            <input type="date" id="dueDate" name="dueDate">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="courseList">
+        <h2>Course List</h2>
+        <ul id="courses"></ul>
+    </div>
+
+    <div id="taskDetails">
+        <h2>Task Details</h2>
+        <form id="getTaskForm">
+            <label for="getCourseId">Enter Course ID:</label>
+            <input type="text" id="getCourseId" name="getCourseId">
+            <button type="submit">Get Tasks</button>
+        </form>
+        <table id="taskTable">
+            <!-- Task details will be populated here dynamically -->
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
